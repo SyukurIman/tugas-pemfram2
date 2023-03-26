@@ -1,0 +1,217 @@
+id,text
+107,*Your current work location? *
+,"(The options below are based on your previous input. If the current condition is different, please type in the input text)"
+20,*Enter the reason for rejecting the ticket:*
+14,- Passwords must be 8-12 characters long and contain 1 uppercase letter
+,"- Must not contain user domain name, month name, the words 'telkomsel' and 'tsel'"
+140,/checkticket - Check Ticket Status
+95,/confirm - Create Remedy Ticket
+120,/desmita - Desmita FAQ
+99,/follup - (Resolution Time Running)
+98,/pending - (Resolution Time Not Running)
+97,/reject - Reject ticket
+130,/resetpass - Reset Domain Password
+96,/response - Ticket Response (Try Before 15min)
+100,/solve - Solve tickets
+131,/unlockuser - Unlock User Domain
+28,<b>Insert reason for pending ticket:</b>
+31,<b>Insert the solution of the ticket above:</b>
+36,<b>Insert summary of the ticket above:</b>
+11,You will register as a non-organic Telkomsel user. Enter your full name (according to your ID card):
+169,"You are still in process %s, do you want to continue this process?"
+187,You entered the details of the visa complaint: *%s*
+185,You enter the visa hostname: *%s*
+184,You enter the vendor name: *%s*
+177,You chose directorate: *%s*
+182,You choose the work location: *%s*
+145,You selected RPA Robot Name: *%s*
+150,You choose the RPA robot problem: *%s*
+179,You choose a sub-directorate: *%s*
+176,You selected a work unit: *%s*
+171,You choose VISA type request: *%s*
+173,You choose VISA type user: *%s*
+109,You press the selection button.
+74,"You are using *%s* domain login, do you want to continue this process using that domain?"
+67,You have *%s* days left before it expires.
+1,You are connected with Bot DitaAja.
+,Please enter your information to register:
+,(NIK or Domain Account) You can no longer use the old categories.
+13,"to reuse this bot, please type /start"
+22,You cannot request tickets because you are registered as IT Jateng DIY Ticketing Support Team.
+137,"You do not have an active ticket, to create a new ticket, please type /start."
+30,Are you sure you want to change the status of this ticket to <b>Follow Up</b>? (counting resolution time starts)
+27,Are you sure you want to change the status of this ticket to <b>PENDING</b>?
+33,Are you sure you solved this ticket?
+87,Is it true that the number to call is *%s*?
+114,Is it true that the ticket above you will <b>Reject</b>?
+23,Is it true that the ticket above you will <b>Respond</b>?
+94,Will this ticket be logged to remedy?
+163,What makes %s %s feel %s?
+,"(If the options below are not suitable, reply with text)"
+168,Did you *Create Ticket Remedy* with the data above?
+164,Did you vote for %s %s (<b>%s</b>) with review: <b>%s</b>
+64,Are you sure you want to reset the password for domain *%s*?
+62,Are you sure you want to unlock the *%s* domain?
+162,Did you really choose %s %s (<b>%s</b>)?
+90,Is the data correct?
+68,Do you want DitaAja to help you reset the *%s* domain password now?
+70,Do you want DitaAja to help you unlock your *%s* domain account now?
+80,"The article you selected does not have an image, please select another article."
+166,How was your experience using DitaAja on ticket %s?
+,Please leave your rating by pressing the button below or type /start to return to the DitaAja main menu.
+167,How was your experience using DitaAja on ticket %s?
+,Please give your rating by clicking the button below:
+79,"Alright %s %s, DitaAja cancel the process. To find out the services that DitaAja provides, please type /start. Okay, thank you for contacting DitaAja."
+71,"DitaAja is happy to help %s %s. to know the services DitaAja provides, please type /start."
+12,"Reply with only the number, no other characters. "
+,"(Organic: Number B0, Non-Organic: Number Telkomsel)"
+89,What is your mobile number that DitaAja can contact you?
+,(Format: 08xx or 628xx)
+106,The following links can be accessed for BYOD: 
+,https://secure.telkomsel.co.id/guest/auth_login.php 
+138,Here's the status of your active DitaAja tickets. 
+113,Here are the tickets that you can <b>Reject</b>:
+32,Here's a ticket that you can follow up:
+49,Here are the tickets that you can Pend:
+34,Here are the tickets you can solve:
+81,"Below, hopefully this will help:"
+134,Chat ID User has not been registered. Please contact DitaAja PIC.
+45,The command you entered is not recognized. Please select one of the buttons below:
+161,Your Create ticket has been canceled. 
+152,Details of your case: *%s*
+60,Your domain was successfully reset. Your new domain password has been sent to number B0. 
+57,Your domain has been successfully unlocked.
+189,Hi <b>%s %s</b> %s.
+21,Do not reply with a command. Enter the request details or press the button above. 
+110,Your answer is saved.
+151,"Type in the details of your issue, or select Skip to skip this process:"
+56,The OTP code you entered is incorrect. Type /resendotp to resend the OTP.
+,"To recreate the ticket, please click /start."
+51,The OTP code you entered is incorrect. Type /resendotp to resend the OTP.
+91,"Your report has been received, a DitaAja agent will contact you shortly, please wait. 8 Your work location in:"
+5,Your work location in: *SEMARANG* 84 Your current work location?
+76,Sorry no data found.
+141,Sorry ticket details are not available.
+77,"Sorry, the OTP you entered is wrong. Please re-enter the OTP code that Dita sent to your B0 number."
+61,"Sorry the system is down, DitaAja failed to reset your domain password, please reset your domain password via alternative channels such as Moana, mServiceDesk or contact the ITSD team WA/Call 0811860086 and Email : ServicedeskHQ-L@telkomsel.co.id Thank you 122 Sorry, your ditaAja account is not yet active. Please complete some information."
+78,"Sorry, you have entered the wrong OTP code 3 times. Would you like to re-generate the OTP code? 121 Sorry, you are not registered as a live agent."
+18,"Sorry, you are not registered as Team Support, you do not have the privilege to access this feature. 127 Sorry, Article not found. Please select another category."
+117,"Sorry, the data you entered is invalid."
+119,"Sorry, the details you entered are not long enough, at least 3 words."
+82,"Sorry, DitaAja does not understand what you mean. Try to enter another keyword. to find out the services that DitaAja provides, please type /start . "
+133,"Sorry, the domain login you entered was not found by DitaAja. Please make sure the domain user is correct and registered in DitaAja."
+112,"Sorry, there are no tickets that you need to *Confirm*. "
+29,"Sorry, there are no tickets that you need to follow up on. "
+48,"Sorry, there are no tickets for you to handle."
+35,"Sorry, there are no tickets that you need to solve. 26 Sorry, there is no ticket you are currently handling."
+115,"Sorry, no there are no tickets that you need to *Reject*."
+116,"Sorry, no there are no tickets that you need to *Response*."
+9,Enter your domain account or CRM NIK:
+,"(*ATTENTION*: _The domain account will be used as a reference for resetting the password, you cannot request a password reset for an account that does not match what you registered._ Input the appropriate one, if you don't have it, fill it with '-') "
+17,Enter the ticket ID:
+59,Enter the OTP code that has been sent to your phone number to continue the Reset Password process: 
+55,Enter the OTP code that has been sent to your phone number to continue the Unlock Domain process: 
+53,Enter your name (as per ID card):
+146,Enter your nickname :
+52,Enter your phone number:
+15,Enter your new password with 8-12 characters only
+6,"Enter your position (CS, TL, FOS, Admin (division), etc): Examples: CS, TL or cso Admin"
+108,"What brand is your device/laptop? 
+(Options: Lenovo X13 yoga, Lenovo T14, Lenovo Heavy Duty, Hp 820 G4, Hp 830 G6, Hp 830 G7, Others: Please specify brand and type) 
+(The options below are based on your previous input. If the current condition is different, please type the input text)"
+85,"What brand is your device/laptop? 
+(Options: Lenovo X13 yoga, Lenovo T14, Lenovo Heavy Duty, Hp 820 G4, Hp 830 G6, Hp 830 G7, Others: Please specify brand and type)"
+93,"Please provide your Domain Login or NIK so that DitaAja can recognize you. to find out the services that DitaAja provides, please type /start."
+75,Please advise the domain login that you will use.
+156,Please input some problem categories that match the following tickets: Select DONE to continue the process
+46,"Sorry, your user status is *inactive*, to activate please contact the SD IT team or Regional IT."
+147,"Sorry, your ditaAja user data needs to be updated. Please complete the following information."
+72,"Sorry, your NIK was not found. Please register first. Thank you."
+73,"Sorry, your NIK or domain user is not recognized by the system. Please try again correctly, if it fails please contact HCM. For non-organic users, please register first in SIAD. Thank you."
+155,"Sorry, your B0 number is already registered with DitaAja."
+92,"Sorry, this feature is currently unavailable, please try again next time."
+136,"Sorry, the ticket remedy was not created successfully. Please reconfirm this ticket in a few moments."
+47,"Sorry, your ticket has been completed automatically due to no response. if you want to request a new ticket, please type /start"
+66,"Sorry, your user domain does not have b0 number data. Please register first. Thank you."
+192,"Please wait, DitaAja will send your video request soon"
+135,"Please wait, ticket is in process"
+143,Name Your Robot?
+88,Contactable number: *%s*
+4,Your office at:
+54,OTP has been sent back to your phone number. Enter the OTP code:
+105,Login Guide
+16,The new password must not contain domain name information!
+25,Select the ticket id that will be pending:
+124,Select your location:
+7,Select your work location:
+144,Select your RPA Robot Name:
+3,Select your office:
+149,Select your RPA robot problem:
+123,Select your region:
+128,Select Top 5 Articles:
+44,"Your registration process is not yet complete. 
+Enter your domain account or CRM NIK:
+(*ATTENTION*: _The domain account will be used as a reference for resetting the password, you cannot request a password reset for an account that does not match what you registered._ Input accordingly sis, if you don't have it fill in '-')
+"
+41,"Your registration process is not yet complete.
+Enter your full name (as per your identity card):"
+43,"Your registration process is not yet complete.
+Enter your position (CS, TL, FOS, Admin (division), etc):
+Example: CS, TL or cso Admin"
+42,"Your registration process is not yet complete.
+Select your office:"
+65,Reset domain password canceled.
+190,"You're welcome <b>%s %s</b> %s.
+Please type /start to contact DitaAja again."
+188,Please check your ticket details again:
+103,Silahkan klik Button di bawah ini untuk mendapatkan panduannya.
+139,Please enter your ditaaja ticket id.
+186,Please enter the details of your complaint:
+183,Please enter your visa hostname:
+50,Please enter the OTP code that DitaAja has sent to your B0 number.
+180,Please enter the name of your GraPARI:
+178,Please enter the name of your sub-directorate:
+181,Please enter the vendor name:
+86,Please enter your case details. (Minimum 3 words)
+125,Please select the following FAQ category or type your question:
+159,Please select the following FAQ/Topic Category or type your question:
+175,Please select your directorate name: Please
+142,select your Robot Name?
+126,Please select the following FAQ sub-categories or type your question:
+170,Please select your request type:
+172,Please select your user type:
+174,Please select your work unit:
+2,Please select the following menu or type your question:
+10,"Please select one of the buttons, do not reply to the message with text."
+58,"The system failed to unlock your domain, please contact the relevant team."
+69,Your domain password status is *%s*.
+129,"Thank you for contacting DitaAja, to find out what services DitaAja provides, please type /start."
+165,"Thank you for contacting DitaAja.
+DitaAja is happy to help %s %s."
+160,"Thank you for contacting DitaAja. Please type another question
+To return to the main menu, please type /start_"
+104,"Thank you,
+DitaAja is happy to help *%s %s*. Please type /start to contact DitaAja again."
+153,"Thank you, your ratings and reviews help DitaAja provide the best service."
+24,There is no ticket that you are handling
+19,"Ticket not found, please enter the correct ticket ID."
+111,Your device / laptop type:
+63,Unlock user domain canceled.
+148,"To continue with your request, please select Robot Name:
+_*to return to the main menu, please type /start_"
+83,"To continue with your request, please provide the following data:
+_*to return to the main menu, please type /start_"
+102,"To find out what services DitaAja provides, please type /start."
+191,"For a more detailed explanation, please click the option below"
+158,"Your user has been registered as %s 
+Your user status is %s 
+
+Do you want to activate the following user?"
+157,"Your user is already registered as %s 
+Your user status %s 
+
+Please deactivate your DitaAja account on the previous device."
+154,"Your user is registered as a non-organic user. Make sure the user domain is correct, or please contact the DitaAja PIC."
+101,User domain: *%s*
+118,User not found.
+132,"Your username is still empty, please contact DitaAja PIC."
