@@ -6,3 +6,7 @@ def markup_change_Language():
   items2 = types.InlineKeyboardButton(text='Inggris', callback_data='language_uk')
   markup.add(items1, items2)
   return markup
+
+def markup_reply():
+  markup = types.ForceReply(selective=False)
+  return markup

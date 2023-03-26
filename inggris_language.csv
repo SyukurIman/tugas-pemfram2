@@ -1,9 +1,7 @@
 id,text
-107,*Your current work location? *
-,"(The options below are based on your previous input. If the current condition is different, please type in the input text)"
+107,"*Your current work location? *\n (The options below are based on your previous input. If the current condition is different, please type in the input text)"
 20,*Enter the reason for rejecting the ticket:*
-14,- Passwords must be 8-12 characters long and contain 1 uppercase letter
-,"- Must not contain user domain name, month name, the words 'telkomsel' and 'tsel'"
+14,"- Passwords must be 8-12 characters long and contain 1 uppercase letter\n- Must not contain user domain name, month name, the words 'telkomsel' and 'tsel'"
 140,/checkticket - Check Ticket Status
 95,/confirm - Create Remedy Ticket
 120,/desmita - Desmita FAQ
@@ -33,10 +31,8 @@ id,text
 109,You press the selection button.
 74,"You are using *%s* domain login, do you want to continue this process using that domain?"
 67,You have *%s* days left before it expires.
-1,You are connected with Bot DitaAja.
-,Please enter your information to register:
-,(NIK or Domain Account) You can no longer use the old categories.
-13,"to reuse this bot, please type /start"
+1,"You are connected with Bot DitaAja. \n Please enter your information to register: \n (NIK or Domain Account) "
+13,"You can no longer use the old categories. \n to reuse this bot, please type /start "
 22,You cannot request tickets because you are registered as IT Jateng DIY Ticketing Support Team.
 137,"You do not have an active ticket, to create a new ticket, please type /start."
 30,Are you sure you want to change the status of this ticket to <b>Follow Up</b>? (counting resolution time starts)
@@ -46,8 +42,7 @@ id,text
 114,Is it true that the ticket above you will <b>Reject</b>?
 23,Is it true that the ticket above you will <b>Respond</b>?
 94,Will this ticket be logged to remedy?
-163,What makes %s %s feel %s?
-,"(If the options below are not suitable, reply with text)"
+163,"What makes %s %s feel %s?\n(If the options below are not suitable, reply with text)"
 168,Did you *Create Ticket Remedy* with the data above?
 164,Did you vote for %s %s (<b>%s</b>) with review: <b>%s</b>
 64,Are you sure you want to reset the password for domain *%s*?
@@ -57,18 +52,13 @@ id,text
 68,Do you want DitaAja to help you reset the *%s* domain password now?
 70,Do you want DitaAja to help you unlock your *%s* domain account now?
 80,"The article you selected does not have an image, please select another article."
-166,How was your experience using DitaAja on ticket %s?
-,Please leave your rating by pressing the button below or type /start to return to the DitaAja main menu.
-167,How was your experience using DitaAja on ticket %s?
-,Please give your rating by clicking the button below:
+166,How was your experience using DitaAja on ticket %s?\nPlease leave your rating by pressing the button below or type /start to return to the DitaAja main menu.
+167,How was your experience using DitaAja on ticket %s?\nPlease give your rating by clicking the button below:
 79,"Alright %s %s, DitaAja cancel the process. To find out the services that DitaAja provides, please type /start. Okay, thank you for contacting DitaAja."
 71,"DitaAja is happy to help %s %s. to know the services DitaAja provides, please type /start."
-12,"Reply with only the number, no other characters. "
-,"(Organic: Number B0, Non-Organic: Number Telkomsel)"
-89,What is your mobile number that DitaAja can contact you?
-,(Format: 08xx or 628xx)
-106,The following links can be accessed for BYOD: 
-,https://secure.telkomsel.co.id/guest/auth_login.php 
+12,"Reply with only the number, no other characters.\n(Organic: Number B0, Non-Organic: Number Telkomsel)"
+89,What is your mobile number that DitaAja can contact you?\n(Format: 08xx or 628xx)
+106,The following links can be accessed for BYOD:\nhttps://secure.telkomsel.co.id/guest/auth_login.php 
 138,Here's the status of your active DitaAja tickets. 
 113,Here are the tickets that you can <b>Reject</b>:
 32,Here's a ticket that you can follow up:
@@ -85,8 +75,7 @@ id,text
 21,Do not reply with a command. Enter the request details or press the button above. 
 110,Your answer is saved.
 151,"Type in the details of your issue, or select Skip to skip this process:"
-56,The OTP code you entered is incorrect. Type /resendotp to resend the OTP.
-,"To recreate the ticket, please click /start."
+56,"The OTP code you entered is incorrect. Type /resendotp to resend the OTP.\nTo recreate the ticket, please click /start."
 51,The OTP code you entered is incorrect. Type /resendotp to resend the OTP.
 91,"Your report has been received, a DitaAja agent will contact you shortly, please wait. 8 Your work location in:"
 5,Your work location in: *SEMARANG* 84 Your current work location?
@@ -106,8 +95,7 @@ id,text
 35,"Sorry, there are no tickets that you need to solve. 26 Sorry, there is no ticket you are currently handling."
 115,"Sorry, no there are no tickets that you need to *Reject*."
 116,"Sorry, no there are no tickets that you need to *Response*."
-9,Enter your domain account or CRM NIK:
-,"(*ATTENTION*: _The domain account will be used as a reference for resetting the password, you cannot request a password reset for an account that does not match what you registered._ Input the appropriate one, if you don't have it, fill it with '-') "
+9,"Enter your domain account or CRM NIK:\n(*ATTENTION*: _The domain account will be used as a reference for resetting the password, you cannot request a password reset for an account that does not match what you registered._ Input the appropriate one, if you don't have it, fill it with '-') "
 17,Enter the ticket ID:
 59,Enter the OTP code that has been sent to your phone number to continue the Reset Password process: 
 55,Enter the OTP code that has been sent to your phone number to continue the Unlock Domain process: 

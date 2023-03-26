@@ -1,5 +1,6 @@
+# -*- coding: utf-8 -*-
 import telebot
-import csv
+import pandas as pd
 
 TOKEN = '6147252599:AAHEXQZNmrKGIjNgkyOMzuEWjw5ObkJtCeo'
 
@@ -8,15 +9,8 @@ def conectToBot():
   return tb
 
 def getDataCsv():
-  data_language_uk = []
-  with open('inggris_language.csv', 'r') as file:
-    csvreader = csv.reader(file)
-    for dataNew in csvreader:
-      data_language_uk.append(dataNew)
-  
-  data_language_id = []
-  with open('indonesia_language.csv', 'r') as file:
-    csvreader = csv.reader(file)
-    for dataNew in csvreader:
-      data_language_id.append(dataNew)
+  data_language_uk = pd.read_csv("inggris_language.csv", 
+                                 error_bad_lines=False, encoding='utf-8')
+  data_language_id = pd.read_csv("indonesia_language.csv", 
+                                 error_bad_lines=False)
   return data_language_uk, data_language_id
