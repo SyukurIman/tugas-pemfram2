@@ -51,4 +51,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
+$route['dashboard'] = 'admin';
+$route['profile'] = 'admin/profile';
+
+// Product Route
+$route['ds-product'] = 'product';
+$route['ds-product/add'] = 'product/addProduct';
+$route['ds-product/edit'] = 'product/editProduct';
+
+// Customers Route
+$route['ds-customer'] = 'customer';
+$route['ds-customer/add'] = 'customer/addCustomer';
+$route['ds-customer/edit'] = 'customer/editCustomer';
+$route['ds-customer/history-payment'] = 'customer/showPaymentCustomer';
+
 $route['translate_uri_dashes'] = FALSE;
