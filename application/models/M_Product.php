@@ -13,6 +13,12 @@ class M_Product extends CI_Model
     $this->db->insert('products', $data);
     return true;
   }
+
+  public function insertDataProductLine($data){
+    $this->db->insert('productlines', $data);
+    return true;
+  }
+
   public function getProduct()
   {
     $sql = 'SELECT * FROM products';

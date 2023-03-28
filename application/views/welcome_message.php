@@ -7,8 +7,7 @@ $randomColor = array(
 	'green',
 	'pink',
 	'red',
-	'purple',
-	'blue'
+	'purple'
 );
 ?><!DOCTYPE html>
 <html lang="en">
@@ -91,6 +90,9 @@ $randomColor = array(
 		<div class="row gy-4">
 			<?php foreach ($office as $key => $Of) : ?>
 				<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+					<?php if ($index > 5) {
+						$index = 0;
+					} ?>
 					<div class="service-box <?php echo $randomColor[$index++] ?>">
 						<i class="ri-discuss-line icon"></i>
 						<h3><?php echo $Of->city?> / <?php echo $Of->country?></h3>

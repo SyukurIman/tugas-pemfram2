@@ -13,7 +13,7 @@
     </a>
     <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
       <li>
-        <a href="<?php echo base_url() ?>ds-product/add">
+        <a href="<?php echo base_url() ?>ds-product/addProductLine">
           <i class="bi bi-circle"></i><span>Add Product Line</span>
         </a>
       </li>
@@ -55,17 +55,17 @@
     </a>
     <ul id="employee-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
       <li>
-        <a href="<?php echo base_url() ?>ds-product/add">
+        <a href="<?php echo base_url() ?>ds-employee/add_office">
           <i class="bi bi-circle"></i><span>Add Office</span>
         </a>
       </li>
       <li>
-        <a href="<?php echo base_url() ?>ds-product/add">
+        <a href="<?php echo base_url() ?>ds-employee/add">
           <i class="bi bi-circle"></i><span>Add Employee</span>
         </a>
       </li>
       <li>
-        <a class="nav-link collapsed" href="<?php echo base_url() ?>ds-product">
+        <a class="nav-link collapsed" href="<?php echo base_url() ?>ds-employee">
           <i class="bi bi-circle"></i><span>Data Employee</span>
         </a>
       </li>

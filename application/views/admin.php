@@ -69,14 +69,14 @@
             </div>
 
             <div class="card-body">
-              <h5 class="card-title">Revenue <span>| This Month</span></h5>
+              <h5 class="card-title">Location Office <span>| Now</span></h5>
 
               <div class="d-flex align-items-center">
                 <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="bi bi-currency-dollar"></i>
+                  <i class="bi bi-pin-map-fill"></i>
                 </div>
                 <div class="ps-3">
-                  <h6>$3,264</h6>
+                  <h6><?php echo count($office) ?></h6>
                   <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">increase</span>
 
                 </div>
@@ -160,7 +160,7 @@
                   <tr >
                     <th scope="row"><a href="#">#<?php echo $index++ ?></a></th>
                     <td><?php echo $orderList->orderDate ?></td>
-                    <td><a href="#" class="text-primary"><?php echo $orderList->orderNumber?></a></td>
+                    <td><a href="<?php echo base_url() ?>ds-order/detail?id=<?php echo $orderList->orderNumber?>" class="text-primary"><?php echo $orderList->orderNumber?></a></td>
                     <td><?php echo $orderList->shippedDate?></td>
                     <td><span class="badge bg-success"><?php echo $orderList->status?></span></td>
                   </tr>

@@ -9,15 +9,27 @@ class Admin extends CI_Controller {
 		$this->load->model('Order');
     $this->load->model('M_Customer');
 		$this->load->model('M_ProductLine');
+		$this->load->model('Office');
 	}
 	public function index()
 	{
 		$result['orders'] = $this->Order->getOrderList();
     $result['customer'] = $this->M_Customer->getCustomer();
+		$result['office'] = $this->Office->getCountOffice();
 		$result['ProductLines'] = $this->M_ProductLine->getProductLine();
 		$result['grafikData'] = $this->M_ProductLine->dataCountProduct();
 		$this->template->render('admin', $result);
 	}
+
+	public function detailOrder(){
+		if (isset($_GET['id'])) {
+			$data = $_GET['id'];
+			$result['orders'] = $this->Order->getOrderDetail($data);
+			
+			$this->template->render('product/order', $result);
+		}
+	}
+
 	public function profile()
 	{
 		$result = array(

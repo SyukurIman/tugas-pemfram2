@@ -80,4 +80,23 @@ class Product extends CI_Controller {
       
     }
   }
+
+  public function addProductLine()
+  {
+    if ($this->input->post()) {
+      $data = $this->input->post();
+      
+      $respon = $this->M_Product->insertDataProductLine($data);
+      if ($respon == true) {
+        $result['message'] = "Insert Data Product Successfully";
+        $this->template->render('product/addProductLine', $result);
+			}
+			else{
+        $result['message'] = "Insert Data Product error !!";
+        $this->template->render('product/addProductLine', $result);
+			}
+    } else {
+      $this->template->render('product/addProductLine');
+    }
+  }
 }

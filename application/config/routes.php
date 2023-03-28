@@ -53,16 +53,24 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['dashboard'] = 'admin';
 $route['profile'] = 'admin/profile';
+$route['ds-order/detail'] = 'admin/detailOrder';
 
 // Product Route
 $route['ds-product'] = 'product';
 $route['ds-product/add'] = 'product/addProduct';
 $route['ds-product/edit'] = 'product/editProduct';
+$route['ds-product/addProductLine'] = 'product/addProductLine';
 
 // Customers Route
 $route['ds-customer'] = 'customer';
 $route['ds-customer/add'] = 'customer/addCustomer';
 $route['ds-customer/edit'] = 'customer/editCustomer';
 $route['ds-customer/history-payment'] = 'customer/showPaymentCustomer';
+
+// Employee Route
+$route['ds-employee'] = 'employee';
+$route['ds-employee/add'] = 'employee/addEmployee';
+$route['ds-employee/edit'] = 'employee/editEmployee';
+$route['ds-employee/add_office'] = 'employee/addOffice';
 
 $route['translate_uri_dashes'] = FALSE;

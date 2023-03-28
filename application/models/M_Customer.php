@@ -15,7 +15,14 @@ class M_Customer extends CI_Model
   }
   public function getCustomerData()
   {
-    $sql = "SELECT customers.customerNumber, customers.customerName, customers.phone, customers.addressLine1, customers.city, customers.postalCode, customers.country, customers.salesRepEmployeeNumber, customers.creditLimit, COUNT( payments.customerNumber) AS countPayment FROM customers LEFT JOIN payments ON payments.customerNumber = customers.customerNumber GROUP BY customers.customerNumber";
+    $sql = "SELECT customers.customerNumber, 
+            customers.customerName, customers.phone, 
+            customers.addressLine1, customers.city, customers.postalCode, 
+            customers.country, customers.salesRepEmployeeNumber, 
+            customers.creditLimit, COUNT( payments.customerNumber) 
+            AS countPayment FROM customers LEFT JOIN payments 
+            ON payments.customerNumber = customers.customerNumber 
+            GROUP BY customers.customerNumber";
     return $this->db->query($sql)->result();
   }
   public function deleteData($data)

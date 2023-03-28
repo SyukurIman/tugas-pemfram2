@@ -39,11 +39,11 @@ class Customer extends CI_Controller {
       
       $respon = $this->M_Customer->insertData($data);
       if ($respon == true) {
-        $result['message'] = "Insert Data Product Successfully";
+        $result['message'] = "Insert Data Customer Successfully";
         $this->template->render('customer/add', $result);
 			}
 			else{
-        $result['message'] = "Insert Data Product error !!";
+        $result['message'] = "Insert Data Customer error !!";
         $this->template->render('customer/add', $result);
 			}
     } else {

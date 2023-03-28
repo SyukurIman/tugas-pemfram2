@@ -2,7 +2,7 @@
   <h1>Dashboard</h1>
   <nav>
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">Product</a></li>
+      <li class="breadcrumb-item"><a href="index.html">Payment</a></li>
       <li class="breadcrumb-item active">Dashboard</li>
     </ol>
   </nav>
@@ -10,7 +10,7 @@
 
 <section class="section card dashboard">
   <div class="card-body">
-    <h5 class="card-title">Data Product</h5>
+    <h5 class="card-title">Data Payment</h5>
     <div class="w-100 overflow-scroll">
       <table class="table table-borderless datatable align-middle" style="width: 100%; min-width: none;">
         <thead class="table-light align-middle">
