@@ -23,7 +23,7 @@
             <th scope="col">City</th>
             <th scope="col">Postal Code</th>
             <th scope="col">Country</th>
-            <th scope="col">Sales ID</th>
+            <th scope="col">Sales Name</th>
             <th scope="col">Credit Limit</th>
             <th scope="col">Total Payment</th>
             <th scope="col">Action</th>
@@ -41,7 +41,7 @@
             <td scope="col"><?php echo $productList->city?></td>
             <td scope="col"><?php echo $productList->postalCode?></td>
             <td scope="col"><?php echo $productList->country?></td>
-            <td scope="col"><?php echo $productList->salesRepEmployeeNumber?></td>
+            <td scope="col"><?php echo $productList->firstName?></td>
             <td scope="col"><?php echo $productList->creditLimit?></td>
             <td scope="col"><a style="text-decoration: underline;" href="<?php echo base_url() ?>ds-customer/history-payment?id=<?php echo $productList->customerNumber ?>"><?php echo $productList->countPayment ?></a> </td>
             <td scope="col">

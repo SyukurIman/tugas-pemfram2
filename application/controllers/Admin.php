@@ -18,7 +18,24 @@ class Admin extends CI_Controller {
 		$result['office'] = $this->Office->getCountOffice();
 		$result['ProductLines'] = $this->M_ProductLine->getProductLine();
 		$result['grafikData'] = $this->M_ProductLine->dataCountProduct();
-		$this->template->render('admin', $result);
+
+		if (isset($_GET['delete-id'])) {
+      $data = $_GET['delete-id'];
+
+			$respon = $this->M_ProductLine->deleteData($data);
+			$result['ProductLines'] = $this->M_ProductLine->getProductLine();
+      if ($respon == true) {
+        $result['message'] = "Delete Data Product Line Successfully";
+        $this->template->render('admin', $result);
+			}
+			else{
+        $result['message'] = "Delete Data Product Line error !";
+        $this->template->render('admin', $result);
+			}
+		} else {
+			$this->template->render('admin', $result);
+		}
+		
 	}
 
 	public function detailOrder(){

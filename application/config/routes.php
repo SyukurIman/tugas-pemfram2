@@ -60,6 +60,7 @@ $route['ds-product'] = 'product';
 $route['ds-product/add'] = 'product/addProduct';
 $route['ds-product/edit'] = 'product/editProduct';
 $route['ds-product/addProductLine'] = 'product/addProductLine';
+$route['ds-product/editProductLine'] = 'product/editProductLine';
 
 // Customers Route
 $route['ds-customer'] = 'customer';

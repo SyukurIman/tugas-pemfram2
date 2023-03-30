@@ -99,4 +99,28 @@ class Product extends CI_Controller {
       $this->template->render('product/addProductLine');
     }
   }
+  public function editProductLine(){
+    if (isset($_GET['id'])) {
+      $data = $_GET['id'];
+      $data = str_replace('%20', ' ', $data);
+
+      if ($this->input->post()) {
+        $dataEdit = $this->input->post();
+  
+        $respon = $this->M_ProductLine->editData($dataEdit);
+        if ($respon == true) {
+          $result['ProductLine'] = $this->M_ProductLine->getProductById($dataEdit['productLine']);
+          $result['message'] = "Update Data Product Line Successfully";
+          $this->template->render('product/editProductLine', $result);
+        }else{
+          $result['message'] = "Update Data Product Line error !!";
+          $this->template->render('product/editProductLine', $result);
+        }
+      } else {
+        $result['ProductLine'] = $this->M_ProductLine->getProductById($data);
+        $this->template->render('product/editProductLine', $result);
+      }
+      
+    }
+  }
 }

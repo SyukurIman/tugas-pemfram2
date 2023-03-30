@@ -16,7 +16,7 @@ class Customer extends CI_Controller {
       $data = $_GET['delete_id'];
 
       $respon = $this->M_Customer->deleteData($data);
-      $result['M_Customer'] = $this->M_Customer->getCustomer();
+      $result['M_Customer'] = $this->M_Customer->getCustomerData();
 
       if ($respon == true) {
         $result['message'] = "Delete Data Customer Successfully";

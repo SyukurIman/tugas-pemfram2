@@ -18,10 +18,11 @@ class M_Customer extends CI_Model
     $sql = "SELECT customers.customerNumber, 
             customers.customerName, customers.phone, 
             customers.addressLine1, customers.city, customers.postalCode, 
-            customers.country, customers.salesRepEmployeeNumber, 
+            customers.country, employees.firstName, 
             customers.creditLimit, COUNT( payments.customerNumber) 
             AS countPayment FROM customers LEFT JOIN payments 
             ON payments.customerNumber = customers.customerNumber 
+            LEFT JOIN employees ON employees.employeeNumber = customers.salesRepEmployeeNumber
             GROUP BY customers.customerNumber";
     return $this->db->query($sql)->result();
   }

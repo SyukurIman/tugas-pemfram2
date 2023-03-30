@@ -205,7 +205,7 @@
                 <div class="activite-label">Type <?php echo $index++ ?></div>
                 <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
                 <div class="activity-content">
-                <a href="#" class="fw-bold text-dark"><?php echo $product->productLine?></a> <?php echo  substr($product->textDescription, 0, 30)?>....
+                <a href="<?php echo base_url()?>ds-product/editProductLine?id=<?php echo $product->productLine ?>" class="fw-bold text-dark"><?php echo $product->productLine?></a> <?php echo  substr($product->textDescription, 0, 30)?>....
                 </div>
               </div><!-- End activity item-->
             <?php endforeach?>
@@ -285,3 +285,17 @@
   </div>
 </section>
 
+<?php if (isset($message)):?>
+  <script>
+    <?php if($message == 'Delete Data Product Line Successfully'): ?>
+      swal("Success!", "<?php echo $message ?>", "success", {
+        button: "Ok",
+      });
+    <?php endif ?>
+    <?php if($message == 'Delete Data Product Line error !!'): ?>
+      swal("Failed!", "<?php echo $message ?>", "error", {
+        button: "Ok",
+      });
+    <?php endif ?>
+  </script>
+<?php endif?>
