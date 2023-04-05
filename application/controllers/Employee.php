@@ -7,6 +7,11 @@ class Employee extends CI_Controller {
 		parent::__construct();
 		$this->load->model('M_Employees');
     $this->load->model('Office');
+
+    $this->load->model('M_Auth');
+		if(!$this->M_Auth->current_user()){
+			redirect('login');
+		}
 	}
   public function index()
   {
@@ -84,6 +89,48 @@ class Employee extends CI_Controller {
 			}
     }else {
       $this->template->render('employee/addOffice');
+    }
+  }
+
+  public function dashboardOffice(){
+    if (isset($_GET['delete_id'])) {
+      $data = $_GET['delete_id'];
+
+      $respon = $this->Office->deleteData($data);
+      $result['data'] = $this->Office->getOffice();
+      if ($respon == true) {
+        $result['message'] = "Delete Data Employee Successfully";
+        $this->template->render('employee/dataOffice', $result);
+			} else{
+        $result['message'] = "Delete Data Employee error !";
+        $this->template->render('employee/dataOffice', $result);
+			}
+    } else {
+      $result['data'] = $this->Office->getOffice();
+		  $this->template->render('employee/dataOffice', $result);
+    }
+  }
+
+  public function editOffices(){
+    if (isset($_GET['id'])) {
+      $data = $_GET['id'];
+      $result['data'] = $this->Office->getDataById($data);
+
+      if ($this->input->post()) {
+        $dataEdit['officeCode'] = $result['data'][0]->officeCode;
+        $dataEdit += $this->input->post();
+        $respon = $this->Office->editData($dataEdit, $result['data'][0]->officeCode);
+        if ($respon == true) {
+          $result['data'] = $this->Office->getDataById($data);
+          $result['message'] = "Edit Data Employee Successfully";
+          $this->template->render('employee/editOffice', $result);
+        } else{
+          $result['message'] = "Edit Data Employee error !!";
+          $this->template->render('employee/editOffice', $result);
+        }
+      } else {
+        $this->template->render('employee/editOffice', $result);
+      }
     }
   }
 }

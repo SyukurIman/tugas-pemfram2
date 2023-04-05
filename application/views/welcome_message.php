@@ -45,7 +45,7 @@ $randomColor = array(
 			<ul>
 				<li><a class="nav-link scrollto active" href="#hero">Home</a></li>
 				<li><a class="nav-link scrollto" href="#offices">Offices</a></li>
-				<li><a class="getstarted scrollto" href="<?php echo base_url()?>admin">Admin</a></li>
+				<li><a class="getstarted scrollto" href="<?php echo base_url()?>admin">Login Admin</a></li>
 			</ul>
 			<i class="bi bi-list mobile-nav-toggle"></i>
 		</nav><!-- .navbar -->
@@ -63,7 +63,7 @@ $randomColor = array(
 				<h2 data-aos="fade-up" data-aos-delay="400">We are team of talented designers making websites with Bootstrap</h2>
 				<div data-aos="fade-up" data-aos-delay="600">
 					<div class="text-center text-lg-start">
-						<a href="<?php echo base_url()?>index.php/admin" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+						<a href="<?php echo base_url()?>dashboard" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
 							<span>Get Started</span>
 							<i class="bi bi-arrow-right"></i>
 						</a>

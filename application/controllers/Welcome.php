@@ -7,6 +7,11 @@ class Welcome extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('Office');
+
+		$this->load->model('M_Auth');
+		if($this->M_Auth->current_user()){
+			redirect('dashboard');
+		}
 	}
 	public function index()
 	{

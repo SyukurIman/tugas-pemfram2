@@ -2,7 +2,7 @@
   <h1>Add Product Lines</h1>
   <nav>
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">Product</a></li>
+      <li class="breadcrumb-item"><a href="<?php echo base_url()?>ds-product">Product</a></li>
       <li class="breadcrumb-item active">Add Product Lines</li>
     </ol>
   </nav>

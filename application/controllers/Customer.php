@@ -8,6 +8,11 @@ class Customer extends CI_Controller {
     parent::__construct();
     $this->load->model('M_Customer');
     $this->load->model('M_Employees');
+
+    $this->load->model('M_Auth');
+		if(!$this->M_Auth->current_user()){
+			redirect('login');
+		}
   }
 
   public function index()

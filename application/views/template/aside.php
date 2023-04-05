@@ -59,6 +59,12 @@
           <i class="bi bi-circle"></i><span>Add Office</span>
         </a>
       </li>
+      <!-- ds-employee/office -->
+      <li>
+        <a href="<?php echo base_url() ?>ds-employee/office">
+          <i class="bi bi-circle"></i><span>Data Office</span>
+        </a>
+      </li>
       <li>
         <a href="<?php echo base_url() ?>ds-employee/add">
           <i class="bi bi-circle"></i><span>Add Employee</span>
@@ -89,9 +95,9 @@
   </li><!-- End F.A.Q Page Nav -->
 
   <li class="nav-item">
-    <a class="nav-link collapsed" href="pages-contact.html">
-      <i class="bi bi-envelope"></i>
-      <span>Contact</span>
+    <a class="nav-link collapsed" href="<?php echo base_url() ?>logout">
+      <i class="bi bi-box-arrow-right"></i>
+      <span>Logout</span>
     </a>
   </li><!-- End Contact Page Nav -->
 

@@ -2,7 +2,7 @@
   <h1>Dashboard</h1>
   <nav>
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">Employee</a></li>
+      <li class="breadcrumb-item"><a href="<?php echo base_url()?>ds-employee">Employee</a></li>
       <li class="breadcrumb-item active">Dashboard</li>
     </ol>
   </nav>

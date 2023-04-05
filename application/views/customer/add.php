@@ -2,7 +2,7 @@
   <h1>Add Customer</h1>
   <nav>
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">Customer</a></li>
+      <li class="breadcrumb-item"><a href="<?php echo base_url()?>ds-customer">Customer</a></li>
       <li class="breadcrumb-item active">Add Customer</li>
     </ol>
   </nav>

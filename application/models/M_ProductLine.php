@@ -20,14 +20,14 @@ class M_ProductLine extends CI_Model
   }
   public function getProductById($data){
     return $this->db->where('productLine', $data)
-                    ->get('productlines')->result();;
+                    ->get('productlines')->result();
   }
   public function deleteData($data){
     $this->db->delete('productlines', array('productLine' => $data));
     return true;
   }
-  public function editData($data){
-    $this->db->replace('productlines', $data);
+  public function editData($id, $data){
+    $this->db->update('productlines', $data, array('productLine' => $id));
     return true;
   }
 }

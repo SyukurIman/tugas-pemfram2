@@ -2,7 +2,8 @@
   <h1>Add Office</h1>
   <nav>
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">Employee</a></li>
+      <li class="breadcrumb-item"><a href="<?php echo base_url()?>ds-employee">Employee</a></li>
+      <li class="breadcrumb-item "><a href="<?php echo base_url()?>ds-employee/office">Office</a></li>
       <li class="breadcrumb-item active">Add Office</li>
     </ol>
   </nav>

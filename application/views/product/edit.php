@@ -2,7 +2,7 @@
   <h1>Edit Product</h1>
   <nav>
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">Product</a></li>
+      <li class="breadcrumb-item"><a href="<?php echo base_url()?>ds-product">Product</a></li>
       <li class="breadcrumb-item active">Edit Product</li>
     </ol>
   </nav>

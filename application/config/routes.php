@@ -55,6 +55,9 @@ $route['dashboard'] = 'admin';
 $route['profile'] = 'admin/profile';
 $route['ds-order/detail'] = 'admin/detailOrder';
 
+$route['login'] = 'auth/login';
+$route['logout'] = 'auth/logout';
+
 // Product Route
 $route['ds-product'] = 'product';
 $route['ds-product/add'] = 'product/addProduct';
@@ -73,5 +76,7 @@ $route['ds-employee'] = 'employee';
 $route['ds-employee/add'] = 'employee/addEmployee';
 $route['ds-employee/edit'] = 'employee/editEmployee';
 $route['ds-employee/add_office'] = 'employee/addOffice';
+$route['ds-employee/office'] = 'employee/dashboardOffice';
+$route['ds-employee/office_edit'] = 'employee/editOffices';
 
 $route['translate_uri_dashes'] = FALSE;

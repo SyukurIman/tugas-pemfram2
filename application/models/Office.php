@@ -28,5 +28,20 @@ class Office extends CI_Model
     $sql = "SELECT * FROM offices ";
     return $this->db->query($sql)->result();
   }
+
+  public function deleteData($data){
+    $this->db->delete('offices', array('officeCode' => $data));
+    return true;
+  }
+
+  public function getDataById($data){
+    return $this->db->where('officeCode', $data)
+                    ->get('offices')->result();;
+  }
+
+  public function editData($data, $id){
+    $this->db->update('offices', $data, array('officeCode' => $id));
+    return true;
+  }
 }
 ?>

@@ -10,6 +10,11 @@ class Admin extends CI_Controller {
     $this->load->model('M_Customer');
 		$this->load->model('M_ProductLine');
 		$this->load->model('Office');
+
+		$this->load->model('M_Auth');
+		if(!$this->M_Auth->current_user()){
+			redirect('login');
+		}
 	}
 	public function index()
 	{

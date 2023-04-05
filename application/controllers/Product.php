@@ -8,6 +8,11 @@ class Product extends CI_Controller {
 		parent::__construct();
 		$this->load->model('M_Product');
     $this->load->model('M_ProductLine');
+
+    $this->load->model('M_Auth');
+		if(!$this->M_Auth->current_user()){
+			redirect('login');
+		}
 	}
 	public function index()
 	{
@@ -107,7 +112,7 @@ class Product extends CI_Controller {
       if ($this->input->post()) {
         $dataEdit = $this->input->post();
   
-        $respon = $this->M_ProductLine->editData($dataEdit);
+        $respon = $this->M_ProductLine->editData($data, $dataEdit);
         if ($respon == true) {
           $result['ProductLine'] = $this->M_ProductLine->getProductById($dataEdit['productLine']);
           $result['message'] = "Update Data Product Line Successfully";

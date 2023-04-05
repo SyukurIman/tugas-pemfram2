@@ -47,6 +47,7 @@
 
     <div class="mb-3">
       <button class="btn btn-primary" type="submit">Save</button>
+      <a class="btn btn-secondary"  href="<?php echo base_url() ?>ds-employee">Cancel</a>
     </div>
   </form>
 </section>
